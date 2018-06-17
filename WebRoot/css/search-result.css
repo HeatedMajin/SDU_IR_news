@@ -1,0 +1,280 @@
+html,body {height: 100%;}
+body {padding: 0px; margin:0px; background-color:#eee;font-family: "微软雅黑";}
+#container{
+	font-size:16px;
+	position: absolute;
+    top:17%;
+    left:20%;
+    margin:0 auto;
+}
+#logo{
+	position: absolute;
+	top: 1.7%;
+    left: 19.7%;
+}
+.result_item{
+	margin-bottom: 14px;
+	width:550px;
+}
+.url{
+	
+	color: green;
+    font-size: 13px;
+}
+.kuaizhao{
+	font-size:13px;
+	color: #666;
+}
+
+.t{
+	font-weight: 400;
+	font-size: 18px;
+	font-family:"微软亚黑";
+	margin-bottom: 2px;
+}
+
+a:-webkit-any-link {
+   color: -webkit-link;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+p{
+	font-size:13px;
+	line-height:15px;
+	font-family:serif;
+	color:#7f7f7f;
+}
+
+.text{
+	font-size:14px;
+	font-family:"微软亚黑";
+	letter-spacing:1px;
+	color:black;
+}
+
+#page{
+	letter-spacing: 1px;
+}
+			
+.search-wrapper {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top:8%;
+    left:50%;
+}
+.search-wrapper.active {}
+
+.search-wrapper .input-holder {
+    overflow: hidden;
+    height: 50px;
+    background: rgba(255,255,255,0);
+    border-radius:6px;
+    position: relative;
+    width:50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder {
+    border-radius: 30px;
+    width:600px;
+    background: #FFF;
+    border: 1px solid #EEE;
+    box-shadow: 4px 4px 10px #999;
+    -webkit-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -moz-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+}
+
+.search-wrapper .input-holder .search-input {
+    width:100%;
+    height: 30px;
+    padding:0px 50px 0 20px;
+    opacity: 0;
+    position: absolute;
+    top:0px;
+    left:5px;
+    background: transparent;
+	letter-spacing:1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+    font-family:"微软雅黑","Open Sans", Arial, Verdana;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    color:#000;
+    -webkit-transform: translate(0, 50px);
+    -moz-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+    -webkit-transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -moz-transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+.search-wrapper.active .input-holder .search-input {
+    opacity: 1;
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+}
+
+.search-wrapper .input-holder .search-icon {
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:6px;
+    background: #FFF;
+    padding:0px;
+    outline:none;
+    position: relative;
+    z-index: 2;
+    float:right;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder .search-icon {
+    width: 40px;
+    height:40px;
+    margin: 5px;
+    border-radius: 40px;
+}
+.search-wrapper .input-holder .search-icon span {
+    width:22px;
+    height:22px;
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+    -moz-transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+    transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+
+}
+.search-wrapper.active .input-holder .search-icon span {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.search-wrapper .input-holder .search-icon span::before, .search-wrapper .input-holder .search-icon span::after {
+    position: absolute;
+    content:'';
+}
+.search-wrapper .input-holder .search-icon span::before {
+    width: 4px;
+    height: 11px;
+    left: 9px;
+    top: 18px;
+    border-radius: 2px;
+    background: #974BE0;
+}
+.search-wrapper .input-holder .search-icon span::after {
+    width: 14px;
+    height: 14px;
+    left: 0px;
+    top: 0px;
+    border-radius: 16px;
+    border: 4px solid #974BE0;
+}
+
+.search-wrapper .result-container {
+    width: 100%;
+    position: absolute;
+    top:80px;
+    left:0px;
+    text-align: center;
+    font-family: "Open Sans", Arial, Verdana;
+    font-size: 14px;
+    display:none;
+    color:#B7B7B7;
+}
+
+
+@media screen and (max-width: 550px) {
+    .search-wrapper.active .input-holder {width:200px;}
+}
+
+
+/*单选按钮*/
+.wrapper {
+	margin: 7px 10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.radio-btn input[type="radio"], .check-box input[type="checkbox"] {
+	visibility: hidden;
+}
+
+/*Custom radio button*/
+.radio-btn {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	float: left;
+	margin: 3px 3px 3px 6px;
+	cursor: pointer;
+	position: relative;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 1px #ccc;
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,
+		255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)),
+		color-stop(100%, rgba(237, 237, 237, 1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',
+		endColorstr='#ededed', GradientType=0);
+}
+
+.checkedRadio {
+	-moz-box-shadow: inset 0 0 5px 1px #ccc;
+	-webkit-box-shadow: inset 0 0 5px 1px #ccc;
+	box-shadow: inset 0 0 5px 1px #ccc;
+}
+
+.radio-btn i {
+	border: 1px solid #E1E2E4;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.checkedRadio i {
+	background-color: #898A8C;
+}
+
+.sele {    
+	float: left;
+    margin: 2px 6px;
+}
